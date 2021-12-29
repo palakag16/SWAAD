@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Signika:wght@322&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.menu_sec{
+    
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-gap:   20px ;
+    justify-content: center;
+    grid-auto-flow: dense;
+    background-color:  rgb(231, 241, 241);
+  
+    
+}
+.food_sec{
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 5px 10px 5px rgb(224, 231, 236) ;
+    border-left: 1px solid rgb(207, 205, 205);
+    border-right:1px solid rgb(243, 240, 240);
+    background-color:rgb(209, 236, 238) ;
+    position: relative;
+}
+
+.food_title{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+
+}
+.food_imagesec{
+    margin-bottom: -4px;
+}
+.food_img{
+    height:100px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+}
+.addbtn{
+    text-align: center;
+    color:rgb(238, 18, 183);
+    padding: 0.5rem 0rem;
+    background-color: rgb(225, 240, 241);
+    font-family: sans-serif;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+    border-top: 1px solid rgb(190, 189, 189);
+    font-size:0.9rem;
+}
+.food_details{
+    padding:10px;
+ 
+}
+.food_price{
+    font-size: 0.8rem;
+}
+.veglogo{
+    height:12px;
+    width:12px;
+    border:1px solid rgb(8, 161, 8);
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.veglogocircle{
+    height:8px;
+    width:8px;
+    background-color: rgb(8, 161, 8);
+    border-radius: 50%;
+}
+.greydot{
+    height: 5px;
+    width:5px;
+    border-radius: 50%;
+    background-color: rgb(155, 152, 152);
+    margin:0px 10px;
+}
+.food_pricesection{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-top:7px;
+}
+.sec1{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.topsec{
+    background-color:  rgb(231, 241, 241);
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.backbutton{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height:35px;
+    border:0.5px solid rgb(218, 212, 212);
+    width:35px;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px 4px 2px rgb(216, 218, 219);
+    /* box-shadow: inset 1px 1px 4px 2px rgb(213, 215, 218); */
+
+}
+.fa-arrow-left{
+    
+    color:rgb(168, 165, 165);
+}
+.address_sec{
+    padding:1rem 0rem;
+    font-family:  sans-serif;
+}
+.adress_area{
+    font-size: 1rem;
+    opacity:0.9;
+    font-weight: 500;
+    color:rgb(51, 50, 50);
+    font-style:inherit;
+    
+}
+.address_city{
+    padding-top: 0.4rem;
+    font-size: 0.67rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color:rgb(126, 123, 123);
+}
+.searchsec{
+    height:2.8rem;
+    width:94%;
+    border-radius: 10px;
+    box-shadow: inset 1px 2px 6px 2px rgb(213, 215, 218);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.5rem;
+    border-bottom: 2px solid rgb(255, 251, 251);
+    border-left: 2px solid rgb(247, 244, 244);
+}
+.searchinput{
+    border:none;
+    outline: none;
+    height: 90%;
+    width: 86%;
+    background-color: transparent;
+    font-size: 1rem;
+    text-align: right;
+}
+.fa-search{
+    color:rgb(168, 165, 165);
+    font-size: 17px;
+}
+/* .switchsec{
+    height:1.5rem;
+    width:3rem;
+    background-color: rgb(187, 36, 36);
+} */
+.switchsec{
+    padding:0.6rem 0rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:22px;
+}
+.switch{
+      position: relative;
+      display: inline-block;
+      width: 51px;
+      height: 27px;
+}
+
+.switch input { 
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(231, 241, 241);
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: inset 0px 1px 7px 2px rgb(213, 215, 218);
+    border-bottom: 2px solid rgb(247, 244, 244);
+  }
+
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 26px;
+    background-color: rgb(250, 252, 252);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .dot{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin-left:5px;
+    background-color: rgb(197, 194, 194);
+    }
+   .spantext{
+       font-size: 0.65rem;
+       font-family: sans-serif;
+       padding-left:6px;
+       text-transform:capitalize;
+       letter-spacing: 0.5px;
+   }
+ .active{
+     background-color:rgb(8, 161, 8);
+ }
+ .activeegg{
+     background-color: yellow;
+ }
+ .recommandations{
+     padding:1rem;
+     font-size:0.7rem;
+     font-family: poppins;
+     text-transform: capitalize;
+     letter-spacing: 0.7px;
+     font-weight: 570;
+     padding-left:2rem;
+     background-color: rgb(231, 241, 241);
+    
+ }
+ .customize_sec{
+     display:inline-flex;
+     justify-content: center;
+     align-items:center;
+     margin-top:0.4rem;
+     background-color: rgba(252, 244, 244,0.4);
+     padding:2px;
+     border-radius: 8px;
+ }
+ .customize{
+     font-style: oblique;
+     color:rgb(145, 28, 145);
+     font-weight:600;
+     font-size: 0.76rem;
+     font-family:"Signika";
+ }
+ .fa-utensils {
+    font-size: 0.8rem;
+    padding-right:4px;
+}
+.customstyle_add{
+    position :absolute;
+    top: 34px;
+    left: -35px;
+    transform: rotate(270deg);
+    background-color: rgba(252, 244, 244,0.7);
+}

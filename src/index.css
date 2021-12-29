@@ -1,0 +1,1341 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Josefin+Sans&family=Pacifico&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Signika:wght@322&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.menuname{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top: 2rem;
+}
+.line{
+    width:37.5%;
+    height:1px;
+    background-color: black;
+}
+.menuitemsname{
+    width:25%;
+    text-align:center;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.maintitlesec{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+   
+
+}
+
+.menuitem{
+   
+    display: inline-block;
+    width:75%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS'
+
+
+}
+.restro_name{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main_menu_section{
+    width:100%;
+    padding:4rem;
+    display:grid;
+    grid-template-columns: 38% 38%;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap:6rem;
+    grid-row-gap: 2rem;
+}
+.menuitemone{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+     width:100%;
+     padding:1rem;
+}
+.menunametitle{
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menudescription{
+    margin-top:10px;
+    font-size: 0.9rem;
+    opacity:0.8;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.price{
+    color:red;
+    font-size: 1.5rem;
+    border-bottom: 1px dashed red;
+}
+.menuimg{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-right:0.5rem;
+}
+.menu{
+    margin-top: 5rem;
+}
+.DayPicker{
+    display:grid;
+    align-items: center;
+}
+.DayPicker-Caption {
+        font-size: 1.2rem;
+        font-family: 'Poppins';
+} 
+.splitbill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:90vh;
+    width:100%;
+}
+.split_bill_title{
+    margin-bottom:1rem;
+    text-transform:  uppercase;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.reset{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    width: 90%;
+    height:2.5rem;
+    font-family: Poppins;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: coral;
+    cursor:pointer;
+}
+.splitbillsection{
+    height:20em;
+    width:45%;
+    background-color: white;
+    display: inline-flex;
+    border:10px solid coral;
+}
+.tipcalculator{
+    width:50%;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: Poppins;
+    font-size: 1.1rem;
+}
+::placeholder{
+    color:white;
+}
+.inputsec{
+    display:inline-flex;
+    align-items: center;
+    width:100%;
+    margin-top: 5px;
+    height:2.5rem;
+    background-color: white;
+    border:2px solid coral;
+    border-radius: 20px;
+    padding-left:10px;
+}
+.amount_input{
+    width:98%;
+    height:100%;
+    outline: none;
+    border:none;
+    background-color: white;
+    text-align: right;
+   
+    padding-right: 1.5rem;
+    
+
+
+}
+.tip_percentage{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+}
+
+.tip_button{
+    background-color: coral;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid coral;
+    cursor: pointer;
+}
+
+.amountperperson{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:10px;
+    width:50%;
+    margin-top: 5px;
+    font-family:Poppins;
+}
+
+.input_tip{
+   background-color: white;
+   color:black;
+   outline: none;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid coral;
+
+}
+.active_tip{
+  background-color: white;
+  color:black;
+  border: 2px solid coral;
+}
+.tipprice{
+    width:90%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    height:3rem;
+    background-color: white;
+    padding:0.5rem;
+    border: 2px solid coral;
+     border-radius: 19px;
+}
+.tipprice span{
+    font-size: 0.9rem;
+}
+.home_banner{
+    height:30rem;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    background-image: url(../src/images/mainb.jpg);
+    background-size: cover;
+    object-fit: cover;
+    align-items: center;
+    background-position-y: center;
+    flex-direction: column;
+}
+.welcome_title{
+    font-size: 5rem;
+    font-family: 'Koh Santepheap', cursive;
+    margin-top:4rem;
+   stroke-width: 1px;
+    color:white
+}
+.explore_menu{
+    width:max-content;
+    padding:10px;
+    background-color: burlywood;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    border-radius: 28px;
+}
+
+.welcome_tagline{
+    color:white;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+.home_menu_sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line1{
+    width:20%;
+    height:1px;
+    background-color: black;
+}
+.menusec{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.home_menutitle{
+    padding:20px;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+  
+}
+.discover_bs{
+    font-size: 2.3rem;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+}
+.menu_items{
+    width:80%;
+    align-items: center;
+    display:grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 30px;
+    justify-content: center;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.menu_item1{
+   height:5rem;
+   display:inline-flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:10px;
+   overflow-y: hidden;
+}
+.menu_details{
+    width:85%;
+}
+.menu_name{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.menu_desc{
+    font-size: 0.9rem;
+    opacity:0.8;
+    font-family: sans-serif;
+}
+
+.items_price{
+    color:coral;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom:  1px dashed  coral;
+}
+.side_img{
+    position: absolute;
+}
+.complete_menu{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    padding:10px;
+    background-color: coral;
+    color:white;
+    border-radius: 25px;
+    margin-bottom:1.5rem;
+    cursor: pointer;
+}
+.makeReservation{
+    height:25rem;
+    width:100%;
+    background-image: url(../src/images/mainb2.jpg);
+    background-size: cover;
+    background-position:70%;
+    object-fit: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reservationtag{
+    font-size: 1.5rem;
+    font-family: Poppins;
+    color:white;
+    font-weight: 500;
+    background-color: rgba(24, 23, 23,0.4);
+    padding: 0.5rem 3rem;
+    margin-top:1.5rem;
+}
+.reservebtn{
+    background-color: white;
+    font-size:1rem;
+    text-transform: uppercase;
+    color:coral;
+    font-family: "Poppins";
+    margin-top:0.9rem;
+    padding:0.5rem 0.8rem;
+    border-radius:25px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor:pointer;
+}
+.aboutcheiftag{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Parisienne', cursive;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding:1rem 0rem;
+}
+.cheifgrid{
+    display:grid;
+    width:100%;
+    grid-template-columns:22% 22% 22% ;
+    grid-gap: 3.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.grid1{
+    background-color: coral;
+    position: relative;
+}
+.chefimg{
+    width:100%;
+    height:25rem;
+    background-size: cover;
+    object-fit: cover;
+    background-position: top;
+}
+.chefname{
+    font-size: 1.1rem;
+    text-align: center;
+    padding:0.5rem 0rem;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.chef_details{
+    top: 0;
+    width:100%;
+    position: absolute;
+    background-color: rgba(255, 127, 80,0.8);
+    color: black;
+    font-size: 1.2rem;
+    height: 25rem;
+    display:flex;
+    align-items: center;
+    padding:0.75rem;
+    font-family: "Poppins";
+    opacity: 0;
+    -webkit-transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+   
+    
+}
+.chefname:hover + .chef_details{
+    opacity:1;
+   
+    /* transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+    -webkit-transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.aboutchef{
+    margin-bottom:3.5rem;
+}
+.locationsec{
+    height:25rem;
+    width:100%;
+    background-image: url('../src/images/maps.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.location_details{
+    background-color: rgba(255, 255, 255, 0.94);
+    padding:0.5rem;
+    width:20rem;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: coral; */
+
+}
+.loctaion_heading{
+    font-size: 0.9rem;
+    border-bottom: 2.2px solid rgb(80, 79, 79);
+    width:max-content;
+    padding:0rem 7px;
+    margin:0.6rem auto;
+    letter-spacing: 2.2px;
+    font-weight: 600;
+    color:rgb(80, 79, 79);
+    font-family: "Poppins";
+}
+
+.location_address{
+    margin: 0.8rem 0rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    color:rgb(105, 105, 105);
+    font-family: 'Karla', sans-serif;
+    line-height: 22px;
+}
+.location_timing{
+    margin: 0.3rem 0rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    color:rgb(105, 105, 105);
+    font-family: 'Karla', sans-serif;
+}
+.timing_section{
+    margin-bottom: 0.6rem;
+}
+.location_details_sec{
+    padding:0.9rem;
+    border: 1.5px solid rgb(80, 79, 79);
+    border:3.5px solid coral;
+    background-color: white;
+}
+.order_sec_top{
+    display:inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+   background-color: coral;
+    height:4rem;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+.order_input_sec{
+    display:inline-flex;
+    align-items: center;
+    height:2.5rem;
+    width:18rem;
+    background-color: white;
+    padding:0.6rem;
+    border-radius: 17px;
+   
+}
+.order_input_sec input{
+  border:none;
+  outline:none;
+  text-align: right;
+  height:100%;
+  width:90%;
+}
+.order_now{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.main_order_sec{
+    margin-top:3rem;
+    display:inline-flex;
+    width:100%;
+}
+.cuisine_categlist{
+    width:12%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height:100vh;
+  
+    border-right: 2px solid coral;
+}
+.cuisine_type_item:first-child{
+    margin-top: 2rem;
+}
+.cuisine_type_item{
+    text-transform: uppercase;
+    font-family: "Poppins";
+    margin:1rem 0rem;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color:rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.cuisine_type_item:hover {
+    border-bottom: 2px solid coral;
+}
+.main_right_sec{
+    width:88%;
+    
+}
+.filter_sec{
+    display:inline-flex;
+    flex-wrap: wrap;
+    grid-gap:0.9rem;
+    padding:0rem 1rem;
+    padding-left:2rem;
+}
+.filter_tileone{
+    border:1.5px solid rgb(121, 120, 120);
+    text-align: center;
+    font-family: 'Poppins';
+    padding:0.6em 0.9rem ;
+    border-radius:20px;
+    cursor: pointer;
+}
+.active{
+    background-color:coral;
+    color:white;
+    border:1.5px solid coral;
+}
+.activec{
+    border-bottom:2px solid coral;
+}
+.filter_tileone:hover{
+    background-color: coral;
+    color:white;
+    border:1.5px solid coral;
+}
+.main_menu_grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+    grid-gap:1.5rem;
+    padding: 2rem;
+}
+.menu_one{
+    width:100%;
+    border:2px solid rgb(158, 157, 157);
+    box-shadow: 2px 2px 10px 7px rgb(245, 242, 242);
+    border-radius: 30px;
+    padding-bottom:0.8rem;
+}
+.cart_one{
+    display:inline-flex;
+    flex-direction: space-evenly;
+    padding:0.4rem;
+    align-items: center;
+    padding-left:0.6rem;
+
+}
+.menu_grid_wrapper{
+    height:40vh;
+
+}
+.cartimg{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    margin-right:0.5rem;
+    background-size: cover;
+    background-position: center;
+
+}
+.cart_menu_grid{
+    padding:0.5rem;
+    
+}
+.cart_left_sec{
+    width:60%;
+    padding-left:0.5rem;
+}
+
+.cart_title{
+    display: grid;
+    align-content: center;
+    justify-content: left;
+    font-family: Poppins;
+    text-transform: capitalize;
+    font-size:0.9rem;
+}
+.dish_type{
+    width:10%;
+}
+.cart_pricesection{
+    width:20%;
+}
+.mainmenu_title{
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+.mainmenu_description{
+    font-size: 0.9rem;
+    color:rgb(97, 95, 95);
+    font-family: "Poppins";
+}
+
+.food_pricesection{
+    width:100%;
+    display:inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    padding-top:7px;
+}
+.food_price{
+    font-size: 0.8rem;
+    font-family:Poppins;
+}
+.veglogo{
+    height:12px;
+    width:12px;
+    border:1px solid rgb(8, 161, 8);
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.egglogo{
+    height:12px;
+    width:12px;
+    border:1px solid yellow;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.non_veglogo{
+    height:12px;
+    width:12px;
+    border:1px solid red;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.greydot{
+    height: 5px;
+    width:5px;
+    border-radius: 50%;
+    background-color: rgb(155, 152, 152);
+    margin:0px 10px;
+}
+.veglogocircle{
+    height:6px;
+    width:6px;
+    margin:auto;
+    background-color: rgb(8, 161, 8);
+    border-radius: 50%;
+}
+.egglogocircle{
+    height:6px;
+    width:6px;
+    margin:auto;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.non_veglogocircle{
+    height:6px;
+    width:6px;
+    margin:auto;
+    background-color: red;
+    border-radius: 50%;
+}
+.customize_sec{
+    width:100%;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:0.4rem;
+    background-color: rgba(252, 244, 244,0.4);
+    padding:2px;
+    border-radius: 8px;
+}
+.customize{
+    font-style: oblique;
+    color:coral;
+    font-weight:600;
+    font-size: 0.76rem;
+    font-family:"Signika";
+}
+.fa-utensils {
+   font-size: 0.8rem;
+   padding-right:4px;
+}
+
+.addbtn{
+    text-align: center;
+    color:coral;
+    padding: 0.5rem 0rem;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing:1.3px;
+    cursor: pointer;
+}
+.main_menu_image{
+    height:12rem;
+    width:100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position:center;
+}
+.add_del_btn{
+    width:30%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    color:coral;
+    font-family: Poppins;
+    font-size:1rem;
+}
+.add_del_btn div{
+    cursor: pointer;
+    border:2px solid white;
+}
+.cart_btns{
+    background:coral;
+    color:white;
+    width:2rem;
+    display:grid;
+    justify-content: center;
+    border-radius: 10px;
+}
+.del_btn{
+    font-size: 0.8rem;
+    align-items: center;
+}
+.hideelem{
+    display:none;
+}
+.showelem{
+    display:flex;
+}
+.timeselection{
+    display:inline-flex
+}
+.timepicker{
+    width:97%;
+    margin:0rem 0.2rem;
+}
+.DayPicker-Day {
+    font-size: 1.25rem;
+    padding: 0.95rem;
+    font-family: sans-serif;
+}
+.DayPicker-Weekday {
+        font-family: sans-serif;
+        font-size: 1.25rem;
+        padding: 0.95rem;
+    }
+.footer_section{
+    background-color: coral;
+    color:black;
+    height:18rem;
+    width:100%;
+    padding:3rem;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family:'Trebuchet MS';
+}
+.about_company ,.links_and_media , .contact_details{
+  width:30%;
+}
+
+.footer_link{
+    margin-bottom: 1rem;
+}
+
+.important_linksec{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:100%;
+   
+}
+.important_linksec div{
+    margin:0rem 1rem 0.5rem 0rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.important_linksec div:hover{
+    border-bottom: 1px solid black;
+}
+.company_title{
+    font-size: 1.4rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+    width:max-content;
+    border-bottom: 1px solid black;
+}
+.about_details{
+    line-height: 24px;
+}
+.contact_details{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+    line-height: 34px;
+    font-size: 1.1em;
+   
+}
+.contact, .email_details{
+    width:15rem;
+    text-align: left;
+}
+.fa-mobile, .fa-envelope-o{
+    margin-right:10px;
+}
+.links_title{
+    font-size: 0.95rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar_section{
+    height:4.5rem;
+    width:100%;
+    /* background-image: url(../src/images/n2.jpg);
+    background-position: center;
+    background-size: cover; */
+    background-color:coral;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Poppins;
+    box-shadow: 0px -12px 5px 16px rgb(0 0 0 / 69%);
+    cursor: pointer;
+    color:black;
+}
+.title_div{
+    width:20%;
+    display:inline-flex;
+    justify-content: center;
+}
+.navbarcompany_title{
+    width:max-content;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 4.5px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+
+}
+.navbar_sidemenu{
+    width:40%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    font-size:1.2rem;
+}
+.reservation_tag{
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin:2rem 0rem 1rem 0rem;
+}
+.reservation_sec{
+    width: 100%;
+    height:100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+}
+.main_res_sec{
+    width:100%;
+    height:auto;
+    border:2px solid coral;
+}
+.peoplesize input{
+   height:2.1rem;
+   width:90%;
+   border:none;
+   outline:none;
+   padding:0.3rem;
+}
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    position: relative;
+    background-color: coral;
+}
+.disabledaypicker{
+    background-color: white;
+}
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside):hover {
+        position: relative;
+        background-color: coral;
+}
+
+.peoplesize{
+    margin:0.4rem 0.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+
+}
+::placeholder{
+    
+    color: rgb(161, 159, 159)
+}
+.confirm_button{
+    background-color: coral;
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS';
+    padding:0.5rem 0rem;
+    cursor: pointer;
+}
+.homebanner{
+    position:relative;
+    width:100%;
+    height:27rem;
+    display:inline-flex;
+    align-items: center;
+}
+.about_home_banner{
+    width:35%;
+    padding:2rem;
+    font-family: Poppins;
+    color:black;
+    position:absolute;
+    background-color: rgba(255, 255, 255,0.9);
+    margin-left:2rem;
+    font-size:1.2rem;
+}
+@media screen and (max-width: 2600px) and (min-width: 1400px) {
+    .about_home_banner{
+        width:31.5%;
+    }
+  }
+.welcome_home_tag{
+    text-align: center;
+    font-size: 1.3rem;
+    color:rgb(94, 93, 93);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+.welcome_line{
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+ 
+}
+.buttons{
+    width:100%;
+    display:inline-flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+.btn_item{
+    background-color: coral;
+    padding:0.3rem 0.7rem;
+    border-radius: 28px;
+    color:white;
+    cursor:pointer;
+}
+.imgsec{
+    width:100%;
+    height:99%;
+}
+.bgimg{
+    width:100%;
+    height:99.1%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.main_gallery{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap:2rem;
+    padding: 1rem 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.gridelem{
+    border-radius: 5px;
+    overflow: hidden;
+    height:auto;
+    width: 100%;
+}
+.img_style{
+    width:100%;
+    height:auto;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-color:coral;
+    margin:0.6rem 0rem;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+.img_style:hover{
+ transform: scale(1.2);
+-webkit-box-shadow: -2px -1px 13px 1px rgba(0,0,0,0.63); 
+box-shadow: -2px -1px 13px 1px rgba(0,0,0,0.63);
+}
+.img_style1{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ 
+}
+
+
+.modal_box{
+    height:500px;
+    width:700px;
+    overflow-y: hidden;
+}
+
+.flexiimages{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flex_img{
+    height:auto;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.image_sections{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+
+}
+
+.gallery_title{
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+ 
+    font-size:3rem;
+    margin:1rem 0rem;
+    font-weight:700;
+}
+.loading_status{
+    margin-top: 3rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+
+}
+.home_gallery{
+   display:inline-flex;
+   justify-content: center;
+   width:calc(250*15);
+   /* height:250px; */
+   animation: scroll 40s linear infinite;
+   padding:20px;
+   
+}
+.home_gallery div{
+    width:250px;
+    height:250px;
+    display:grid;
+    align-items: center;
+    padding:15px;
+}
+.home_gallery img{
+    width:100%;
+    height:220px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+}
+.home_gallery img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.home_gallery:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*7));
+    }
+}
+
+.activeaddbtn{
+    background:coral;
+    color:white;
+}
+.cartdiv{
+    width:100%;
+    border-left:2px solid coral;
+    height:max-content;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid coral;
+    box-shadow: 1px 0px 8px 8px grey;
+  
+}
+.total_amount{
+    display: inline-flex;
+    align-items: center;
+    width:100%;
+    text-align: center;
+    padding:0.2rem;
+    font-family:Poppins;
+    text-transform: capitalize;
+    height:60px;
+    background-color:rgb(241, 236, 236);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:white
+}
+.sum_total{
+    width:50%;
+    font-size: 0.9rem;
+}
+.place_order{
+   width:100%;
+   background-color: coral;
+   height:100%;
+   display:grid;
+   align-items: center;
+   cursor:pointer;
+   font-family: sans-serif;
+}
+.order_id{
+    width:60%;
+    background-color: coral;
+    color:white;
+    font-family: Poppins;
+    margin-left:0.5rem;
+    padding:0.5rem;
+    padding-left:0.5rem;
+    border-radius: 10px;
+    margin-right:0.6rem;
+    margin-bottom:1rem;
+   
+}
+.my_order{
+    font-family: Poppins;
+    font-size: 1.5rem;
+    margin:1rem;
+    border-bottom: 2px solid rgb(194, 190, 190);
+}
+.totalquant{
+    width:100%;
+    text-align: right;
+    float: right;
+}
+.totalquant span{
+    border:1px solid coral;
+    font-family: Poppins;
+    background-color: coral;
+    margin:0.3rem;
+    border-radius: 15px;
+    padding:0.4rem;
+    
+}
+.total_section{
+    border-top: 2px solid rgb(196, 195, 195);
+    margin:0.6rem;
+    width:94%;
+    padding:0.5rem 0.7rem;
+}
+.sub_totalsec{
+    width:98%;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    padding:0.4rem 0rem;
+}
+.total_name{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+.sub_price{
+    color:coral;
+    font-family: sans-serif;
+}
+.sub_price span{
+    font-family: Poppins;
+}
+.sub_prices{
+    color:grey;
+    font-family: sans-serif;
+}
+.total_bold{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.order_placed{
+     text-align: center;
+     color:green;
+     margin-top:2rem;
+     font-size: 2.5rem;
+     font-family: Poppins;
+}
+.backhome{
+    text-align: center;
+    color:white;
+    font-family: Poppins;
+    width:100%;
+    display:inline-flex;
+    justify-content: center;
+    margin-top:2rem;
+    
+}
+.backhome div{
+    width:max-content;
+    background-color: coral;
+    padding:0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.infomobmain{
+    width:100%;
+    height:100vh;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.info_mob{
+   
+    text-align: center;
+    color:coral;
+    font-family: Poppins;
+}
+.activenav{
+    border-bottom:2px solid black;
+}
+.lazyloadinfo{
+    width:100%;
+    font-size: 2rem;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.gridCart{
+    display:grid;
+    grid-template-columns: 77% 23%;
+
+}
